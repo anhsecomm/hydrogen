@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
- 
+
 const Teaser = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)} key={blok._uid}>
@@ -7,5 +7,5 @@ const Teaser = ({ blok }) => {
     </div>
   );
 };
- 
+
 export default Teaser;

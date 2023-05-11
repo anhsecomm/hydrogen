@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
- 
+
 const Feature = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)} key={blok._uid}>
@@ -7,5 +7,5 @@ const Feature = ({ blok }) => {
     </div>
   );
 };
- 
+
 export default Feature;
