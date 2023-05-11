@@ -43,6 +43,7 @@ import Teaser from "./components/Teaser";
 import Form from "./components/Form";
 import FormInputs from "./components/FormInputs";
 import ProductsGrid from './components/shopify/ProductsGrid';
+import Required from './components/Required'
 
 const components = {
   feature: Feature,
@@ -52,10 +53,11 @@ const components = {
   Form: Form,
   FormInputs: FormInputs,
   ProductGrid: ProductsGrid,
+  Required: Required,
 };
 
 storyblokInit({
-  accessToken: "uSRThKoqquFjDgESZSpd3gtt",
+  accessToken: "nCvaiPf0lqfOeReI5ecM3Att",
   use: [apiPlugin],
   components,
   apiOptions: {
