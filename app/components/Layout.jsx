@@ -1,7 +1,7 @@
 import Footer from './Footer';
 import Header from './Header';
 
-export default Layout = ({children}) => {
+export default function Layout ({children}) {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <div>

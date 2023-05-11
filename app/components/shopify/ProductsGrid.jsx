@@ -23,7 +23,6 @@ const ProductsGrid = ({blok}) => {
         const selectedVariant = variants.nodes[0];
         const {price, compareAtPrice, image} = selectedVariant;
         const isDiscounted = compareAtPrice?.amount < price?.amount;
-        console.log(isDiscounted)
         return (
           <div key={Id}>
             <Link to={`/products/${handle}`}>
