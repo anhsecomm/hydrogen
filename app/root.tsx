@@ -11,6 +11,8 @@ import tailwind from './styles/tailwind-build.css';
 import styles from './styles/app.css';
 import favicon from '../public/favicon.svg';
 import {Seo} from '@shopify/hydrogen';
+import Layout from './components/Layout';
+
 export const links = () => {
   return [
     {rel: 'stylesheet', href: tailwind},
@@ -38,12 +40,18 @@ import Feature from "./components/Feature";
 import Grid from "./components/Grid";
 import Page from "./components/Page";
 import Teaser from "./components/Teaser";
+import Form from "./components/Form";
+import FormInputs from "./components/FormInputs";
+import ProductsGrid from './components/shopify/ProductsGrid';
 
 const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
   page: Page,
+  Form: Form,
+  FormInputs: FormInputs,
+  ProductGrid: ProductsGrid,
 };
 
 storyblokInit({
@@ -70,7 +78,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-      <Outlet />
+      <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

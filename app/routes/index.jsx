@@ -28,8 +28,6 @@ export default function Page() {
   story = useStoryblokState(story);
 
   return (
-    <Layout>
-      <StoryblokComponent blok={story.content} />
-    </Layout>
+    <StoryblokComponent blok={story.content} />
   );
 }
