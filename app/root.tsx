@@ -10,29 +10,23 @@ import {
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Feature from "./components/Feature";
 import Grid from "./components/Grid";
-import Teaser from "./components/Teaser";
 import Page from "./components/Page";
-import Post from "./components/Post";
+import Teaser from "./components/Teaser";
 
 const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
   page: Page,
-  post: Post,
 };
 
-import styles from "./styles/app.css";
-
 storyblokInit({
-  accessToken: "rRJB0V1p4MbLvSwE7JkCLQtt",
-  // accessToken: process.env.STORYBLOK_PREVIEW_TOKEN,
-  // for spaces located in the US:
-  apiOptions: {
-    region: "us",
-  },
+  accessToken: "uSRThKoqquFjDgESZSpd3gtt",
   use: [apiPlugin],
   components,
+  apiOptions: {
+    region: ''
+  }
 });
 
 export const meta = () => ({
@@ -56,8 +50,4 @@ export default function App() {
       </body>
     </html>
   );
-}
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
 }
